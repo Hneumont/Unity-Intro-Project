@@ -20,7 +20,11 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame){
+            Vector3 position = transform.position;
+            //position.x += Random.range(-0.5, 0.5);
+            //position.z += Random.range(-0.5, 0.5);
             Instantiate(spawnObject, transform.position, transform.rotation);
+            //Destroy(go);
         }
     }
 }
