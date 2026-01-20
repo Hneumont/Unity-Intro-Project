@@ -154,9 +154,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca65b44494f8df44b2911ca2f50a47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rocket
-  damage: 4.74
+  damage: 1
   effect: {fileID: 1431530912211830, guid: 0132ae02895533b45a17a5be011e7796, type: 3}
   speed: 6.72
+  parent: {fileID: 0}
 --- !u!96 &7932223231535187646
 TrailRenderer:
   serializedVersion: 4
