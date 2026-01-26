@@ -1,5 +1,5 @@
 using UnityEngine;
-//using UnityEngine.Coroutines;
+using System.Collections;
 
 public class Gun : MonoBehaviour
 {
