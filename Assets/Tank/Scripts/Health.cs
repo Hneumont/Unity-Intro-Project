@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] float maxHealth = 10;
     [SerializeField] GameObject hitEffect;
     [SerializeField] GameObject destroyEffect;
+    [SerializeField] UnityEvent destroyEvent;
     public float CurrentHealth
     {
         get { return health; }
@@ -39,6 +41,7 @@ public class Health : MonoBehaviour
         {
             TankGameManager.Instance.Score += 100;
             if (destroyEffect != null) Instantiate(destroyEffect, transform.position, Quaternion.identity);
+            destroyEvent?.Invoke();
             Destroy(gameObject);
         }
     }
@@ -46,11 +49,5 @@ public class Health : MonoBehaviour
     public void OnHeal(float amount)
     {
         CurrentHealth += amount;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

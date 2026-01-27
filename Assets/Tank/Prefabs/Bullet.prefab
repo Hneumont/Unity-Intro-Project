@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca65b44494f8df44b2911ca2f50a47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rocket
-  damage: 0.1
+  damage: 1
   effect: {fileID: 1804206099813350, guid: f8abba72add67c64aa07cced3fd18193, type: 3}
   speed: 50
   parent: {fileID: 0}

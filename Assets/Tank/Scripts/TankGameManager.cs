@@ -1,6 +1,6 @@
 using System.Diagnostics.Contracts;
 using TMPro;
-//using UnityEngine
+using UnityEngine.InputSystem;
 using UnityEngine;
 
 public class TankGameManager : MonoBehaviour
@@ -18,6 +18,10 @@ public class TankGameManager : MonoBehaviour
     {
         titlePanel.SetActive(false);
         Time.timeScale = 1.0f;
+    }
+    public void onGameOver()
+    {
+
     }
     public void OnGameWin()
     {
