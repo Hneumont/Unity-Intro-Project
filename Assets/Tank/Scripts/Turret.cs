@@ -21,7 +21,9 @@ public class Turret : MonoBehaviour
         if (fireTimer <= 0)
         {
             fireTimer += fireRate;
-            Instantiate(ammo, muzzle.position, muzzle.rotation);
+            Ammo bullet;
+            bullet = Instantiate(ammo, muzzle.position, muzzle.rotation);
+            bullet.tag = "Enemy";
         }
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
     }

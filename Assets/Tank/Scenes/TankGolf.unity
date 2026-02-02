@@ -1908,7 +1908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5745079977831032226, guid: d021a3006cafdb942bff7e482be04c73, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6065155183952934255, guid: d021a3006cafdb942bff7e482be04c73, type: 3}
       propertyPath: ammo

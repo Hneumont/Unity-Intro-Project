@@ -21,7 +21,7 @@ public class Projectile : Ammo
     private void OnCollisionEnter(Collision other) {
         // check if hit object has health compononet
         Health health = other.gameObject.GetComponent<Health>();
-        if (health != null)
+        if (health != null && !other.gameObject.CompareTag(gameObject.tag))
         {
            // if (other.gameObject == parent) break;
             //deal damage to hit

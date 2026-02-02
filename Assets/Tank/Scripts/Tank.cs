@@ -64,8 +64,11 @@ public class Tank : MonoBehaviour
 
     void onAttack()
     {
+        TankGameManager.Instance.Score -= 100;
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.AddRelativeForce(Vector3.forward * -recoil, ForceMode.Impulse);
-        Instantiate(ammo, muzzle.transform.position, muzzle.transform.rotation);
+        GameObject bullet;
+        bullet = Instantiate(ammo, muzzle.transform.position, muzzle.transform.rotation);
+        bullet.tag = "HurtAll";
     }
 }

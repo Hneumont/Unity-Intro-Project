@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
 
         if (destroyed)
         {
-            TankGameManager.Instance.Score += 100;
+            if (gameObject.CompareTag("Enemy")) TankGameManager.Instance.Score += 50;
             if (destroyEffect != null) Instantiate(destroyEffect, transform.position, Quaternion.identity);
             destroyEvent?.Invoke();
             Destroy(gameObject);
