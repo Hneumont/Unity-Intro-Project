@@ -9,6 +9,6 @@ public class SOGUIExample : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = $"Score: {score.value.ToString("####")}";
+        text.text = $"Score: {score.value.ToString("0000")}";
     }
 }
